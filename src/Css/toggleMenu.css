@@ -1,0 +1,73 @@
+.toogle11 {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    align-items: center;
+    overflow-y: hidden;
+    -ms-overflow-style: none;
+    scrollbar-width: thin;
+    max-height: 96vh;
+    position: fixed;
+    top: 10%;
+    z-index: 1;
+
+}
+
+.toogle11:hover {
+    overflow-y: scroll;
+}
+
+
+
+.blank {
+
+    width: 83%;
+    border: 1px solid rgb(183, 182, 182);
+    margin: 23px;
+}
+
+.toogle11 li {
+    padding-left: 20px;
+}
+
+.Icon {
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+
+}
+
+
+
+.One {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    padding-left: 10px;
+
+}
+
+.One:hover {
+    background-color: #ececec;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.toogle11 ul {
+    list-style: none;
+}
+
+.toogle11 li a {
+    text-decoration: none;
+    color: black;
+
+}
+
+@media only screen and (max-width:500px) {
+    .toogle11 {
+        z-index: 1;
+        padding-top: 10%;
+        width: 40%;
+    }
+}

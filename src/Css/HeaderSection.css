@@ -1,0 +1,323 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+
+}
+
+.line {
+    display: none;
+}
+
+.mainline {
+    display: block;
+    color: red;
+}
+
+
+
+.teo {
+    display: flex;
+    align-items: center;
+    position: relative;
+    left: 3%;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+    height: 10vh;
+    padding-bottom: 15px;
+
+}
+
+.twot {
+    display: flex;
+    align-items: center;
+}
+
+
+.bar img {
+    width: 10%;
+}
+
+.bar {
+    font-size: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.bar img {
+    width: 45%;
+    padding-left: 20px;
+}
+
+
+
+.searchBar input {
+    border-radius: 20px;
+    padding: 0 300px 0 16px;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    border-radius: 40px 0 0 40px;
+    box-shadow: 20px;
+    position: relative;
+    top: 20px;
+    right: 20%;
+
+}
+
+.mainInput {
+    margin: 0px -17%;
+}
+
+
+
+.inputfield {
+    font-size: 20px;
+    height: 40px;
+    border: 1px solid rgb(213, 213, 213);
+    box-shadow: inset 0 1px 2px rgb(227, 225, 225);
+    width: 100%;
+
+}
+
+.se {
+    position: relative;
+    bottom: 20px;
+    float: right;
+    right: 12.5%;
+
+}
+
+.se svg {
+    font-size: 15px;
+}
+
+.se:focus {
+    outline: none;
+}
+
+.se button {
+    border: 1px solid #7e7e7e;
+
+    border-radius: 0px 14px 14px 0px;
+    background-color: #f3f3f3;
+    font-weight: 900;
+
+}
+
+.se button:hover {
+
+    box-shadow: inset 0 1px 4px rgb(212, 211, 211);
+}
+
+.mic {
+    padding-right: 12%;
+    padding-top: 15px;
+
+
+}
+
+.mic :hover {
+    background: #b4b3b3;
+    transition: 0.5s;
+}
+
+
+.mic button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    color: black;
+    border: none;
+    padding: 10px;
+
+    align-items: center;
+    display: flex;
+    justify-content: center;
+
+
+
+}
+
+.sdsdsd {
+    font-size: 20px;
+}
+
+
+
+.lastSection {
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    justify-content: space-between;
+    width: 15%;
+    cursor: pointer;
+
+
+}
+
+/* .lastSection :hover {
+
+    background-color: #d7d7d7;
+    border-radius: 10px;
+
+} */
+
+.create {
+    padding: 10px;
+
+}
+
+.noti {
+    padding: 10px;
+
+}
+
+.account {
+    padding: 10px;
+
+}
+
+.both {
+    font-size: 30px;
+}
+
+@media only screen and (max-width:1250px) {
+    .searchBar input {
+        border-radius: 20px;
+        padding: 0 215px 0 16px;
+
+
+    }
+
+    nav {
+        display: flex;
+    }
+
+    .lastSection {
+        position: relative;
+        right: 13%;
+    }
+}
+
+@media only screen and (max-width:1095px) {
+    .searchBar input {
+        border-radius: 20px;
+        padding: 0 115px 0 16px;
+
+
+    }
+
+    .mic {
+        padding-right: 10px;
+    }
+
+    .lastSection {
+        position: relative;
+        right: 13%;
+    }
+}
+
+
+@media only screen and (max-width:926px) {
+    .searchBar input {
+        border-radius: 20px;
+        padding: 0 85px 0 16px;
+
+
+    }
+
+    .lastSection {
+        padding-left: 6%;
+    }
+}
+
+@media only screen and (max-width:700px) {
+    .searchBar input {
+        display: none;
+    }
+
+    nav {
+        height: 5vh;
+    }
+
+    .se button {
+        position: relative;
+        top: 26px;
+        right: 126px;
+        border: none;
+        border-radius: none;
+        background-color: #fff;
+        left: 140px;
+
+    }
+
+    .se svg {
+        font-size: 32px;
+    }
+
+
+
+    .mic {
+        position: relative;
+        right: 26px;
+        display: none;
+    }
+
+    .lastSection {
+        padding-left: 0%;
+        display: none;
+    }
+}
+
+@media only screen and (max-width:565px) {
+
+
+    .se button {
+        position: relative;
+        top: 26px;
+        right: 20px;
+    }
+
+}
+
+@media only screen and (max-width:490px) {
+    .se button {
+        position: relative;
+        top: 23px;
+    }
+
+    .lastSection {
+        padding-right: 18%;
+    }
+}
+
+@media only screen and (max-width:420px) {
+    .lastSection {
+        padding-right: 24%;
+    }
+
+    .se button {
+        position: relative;
+        top: 23px;
+        right: 69px;
+    }
+
+}

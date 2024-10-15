@@ -1,0 +1,68 @@
+.tabss {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    /* Hide scrollbar on Firefox */
+    -ms-overflow-style: none;
+    font-family: 'Times New Roman', Times, serif;
+
+    /* Hide scrollbar on IE/Edge */
+}
+
+.tabss::-webkit-scrollbar {
+    display: none;
+    /* Hide scrollbar on Chrome/Safari */
+}
+
+.bttn {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
+
+.arrow {
+    font-size: 28px;
+    cursor: pointer;
+    padding: 5px;
+    padding-left: 5%;
+}
+
+button {
+    margin-left: 2%;
+    padding: 10px 24px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    font-family: "Roboto", "Arial", sans-serif;
+    font-weight: bolder;
+    color: black;
+}
+
+.tabss button:hover {
+    background-color: rgb(212, 212, 212);
+    transition: 1s;
+    cursor: pointer;
+}
+
+@media only screen and (max-width:500px) {
+    .tabss {
+        margin-left: 0% !important;
+        padding-bottom: 10px;
+
+    }
+
+    .arrow {
+        margin-left: -6% !important;
+        display: none;
+
+    }
+
+    .jeeta {
+        background-color: #898989 !important;
+        color: white;
+    }
+
+}

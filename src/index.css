@@ -1,3 +1,16 @@
+@import './Css/HeaderSection.css';
+@import './Css/sideNavbar.css';
+@import './Css/toggleMenu.css';
+@import './Css/tabs.css';
+@import './Css/Content.css';
+@import './Css/embedded.css';
+@import './Css/AccountSection.css';
+@import './Css/ShortPage.css';
+@import './Css/footer.css';
+
+
+
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
