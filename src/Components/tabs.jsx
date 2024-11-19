@@ -1,7 +1,6 @@
 import React, { useRef } from 'react';
 import { MdArrowForwardIos } from "react-icons/md";
 import { IoIosArrowBack } from "react-icons/io";
-import { BiLogoSlack } from 'react-icons/bi';
 import { TbGps } from "react-icons/tb";
 
 const Tabs = ({ setFilter, marginLeft, onTabButtonClick }) => {

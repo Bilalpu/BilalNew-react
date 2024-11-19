@@ -21,12 +21,12 @@ const AccountSection = () => {
         <div >
             <section>
                 <div className="accountO">
-                    <VscAccount /><li><a href="">Account Name</a></li>
+                    <VscAccount /><li><a href="/">Account Name</a></li>
 
 
                 </div>
                 <div className="channell">
-                    <li><a href="">View Your Channel</a></li>
+                    <li><a href="/">View Your Channel</a></li>
                 </div>
 
                 <div className='khali'>
@@ -34,13 +34,13 @@ const AccountSection = () => {
                 <div className="there">
                     <ul>
                         <div className="fav">
-                            <GrGoogle className="react" /><li><a href="">Google Account</a></li>
+                            <GrGoogle className="react" /><li><a href="/">Google Account</a></li>
                         </div>
                         <div className="fav">
-                            <MdOutlineSwitchAccount className="react" /><li><a href="">Switch Account</a></li>
+                            <MdOutlineSwitchAccount className="react" /><li><a href="/">Switch Account</a></li>
                         </div>
                         <div className="fav">
-                            <PiSignOutDuotone className="react" /><li><a href="">Sign Out</a></li>
+                            <PiSignOutDuotone className="react" /><li><a href="/">Sign Out</a></li>
                         </div>
 
                     </ul>
@@ -51,10 +51,10 @@ const AccountSection = () => {
                 <div className="ten">
                     <ul>
                         <div className="fav">
-                            <SiYoutubestudio className="react" /><li><a href="">Youtube Studio</a></li>
+                            <SiYoutubestudio className="react" /><li><a href="/">Youtube Studio</a></li>
                         </div>
                         <div className="fav">
-                            <CiDollar className="react" /><li><a href="">Purchase MemberShip</a></li>
+                            <CiDollar className="react" /><li><a href="/">Purchase MemberShip</a></li>
                         </div>
 
 
@@ -67,19 +67,19 @@ const AccountSection = () => {
                 <div className="eleven">
                     <ul>
                         <div className="fav">
-                            <BiSolidUserAccount className="icon" /><li><a href="">Your Data in Youtube</a></li>
+                            <BiSolidUserAccount className="icon" /><li><a href="/">Your Data in Youtube</a></li>
                         </div>
                         <div className="fav">
-                            <WiMoonWaxingCrescent2 className="icon" /><li><a href="">Apperance : Device & Themes    </a></li>
+                            <WiMoonWaxingCrescent2 className="icon" /><li><a href="/">Apperance : Device & Themes    </a></li>
                         </div>
                         <div className="fav">
-                            <IoLanguageOutline className="react" /><li><a href="">Language : British English</a></li>
+                            <IoLanguageOutline className="react" /><li><a href="/">Language : British English</a></li>
                         </div>
                         <div className="fav">
-                            <MdOutlineAddModerator className="react" /><li><a href="">Location : Pakistan</a></li>
+                            <MdOutlineAddModerator className="react" /><li><a href="/">Location : Pakistan</a></li>
                         </div>
                         <div className="fav">
-                            <FaRegKeyboard className="react" /><li><a href="">Keyboard ShortCut</a></li>
+                            <FaRegKeyboard className="react" /><li><a href="/">Keyboard ShortCut</a></li>
                         </div>
 
                     </ul>
@@ -89,13 +89,13 @@ const AccountSection = () => {
                 <div className="Twelve">
                     <ul>
                         <div className="fav">
-                            <IoSettingsOutline className="react" /><li><a href="">Setting</a></li>
+                            <IoSettingsOutline className="react" /><li><a href="/">Setting</a></li>
                         </div>
                         <div className="fav">
-                            <IoIosHelpCircleOutline className="react" /><li><a href="">Help</a></li>
+                            <IoIosHelpCircleOutline className="react" /><li><a href="/">Help</a></li>
                         </div>
                         <div className="fav">
-                            <RiFeedbackLine className="react" /><li><a href="">Send FeedBack</a></li>
+                            <RiFeedbackLine className="react" /><li><a href="/">Send FeedBack</a></li>
                         </div>
 
                     </ul>

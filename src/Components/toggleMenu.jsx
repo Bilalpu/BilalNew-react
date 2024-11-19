@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+
 import { MdHomeFilled } from "react-icons/md";
 import { SiYoutubeshorts } from "react-icons/si";
 import { MdSubscriptions } from "react-icons/md";
@@ -26,10 +26,10 @@ import { IoHelpCircleOutline } from "react-icons/io5";
 
 import { Link } from 'react-router-dom';
 const ToggleMenu = () => {
-    const [isVisible, setisVisible] = useState(false);
-    const toggleVisibility = () => {
-        setisVisible(prevState => !prevState)
-    };
+    // const [setisVisible] = useState(false);
+    // const toggleVisibility = () => {
+    //     setisVisible(prevState => !prevState)
+    // };
 
     return (
 
@@ -37,14 +37,14 @@ const ToggleMenu = () => {
             <ul>
                 <Link to="/">
                     <div className="One">
-                        <MdHomeFilled className='Icon' />  <li><a href="">Home</a></li>
+                        <MdHomeFilled className='Icon' />  <li><a href="/">Home</a></li>
                     </div></Link>
                 <Link to="/shorts">
                     <div className="One">
-                        <SiYoutubeshorts className='Icon' />    <li><a href="">Short </a></li>
+                        <SiYoutubeshorts className='Icon' />    <li><a href="/">Short </a></li>
                     </div></Link>
                 <div className="One">
-                    <MdSubscriptions className='Icon' /> <li><a href="">Subscription</a></li>
+                    <MdSubscriptions className='Icon' /> <li><a href="/">Subscription</a></li>
                 </div>
                 <div className="blank">
 
@@ -54,22 +54,22 @@ const ToggleMenu = () => {
                         <li><h3>YOU</h3></li><IoIosArrowForward />
                     </div>
                     <div className="One">
-                        <MdOutlineSwitchAccount className='Icon' />    <li><a href="">Your Channel </a></li>
+                        <MdOutlineSwitchAccount className='Icon' />    <li><a href="/">Your Channel </a></li>
                     </div>
                     <div className="One">
-                        <GoHistory className='Icon' /> <li><a href="">History</a></li>
+                        <GoHistory className='Icon' /> <li><a href="/">History</a></li>
                     </div>
                     <div className="One">
-                        <CgPlayList className='Icon' /> <li><a href="">PlayList</a></li>
+                        <CgPlayList className='Icon' /> <li><a href="/">PlayList</a></li>
                     </div>
                     <div className="One">
-                        <RiVideoLine className='Icon' /> <li><a href="">Your Video</a></li>
+                        <RiVideoLine className='Icon' /> <li><a href="/">Your Video</a></li>
                     </div>
                     <div className="One">
-                        <MdOutlineWatchLater className='Icon' /> <li><a href="">Watch Later</a></li>
+                        <MdOutlineWatchLater className='Icon' /> <li><a href="/">Watch Later</a></li>
                     </div>
                     <div className="One">
-                        <AiOutlineLike className='Icon' /> <li><a href="">Liked Video</a></li>
+                        <AiOutlineLike className='Icon' /> <li><a href="/">Liked Video</a></li>
                     </div>
                 </div>
                 <div className="blank">
@@ -78,7 +78,7 @@ const ToggleMenu = () => {
                 <div className="three">
                     <h3>Subscriptions</h3>
                     <div className="One">
-                        <PiChartBarHorizontalDuotone className='Icon' /> <li><a href="">Your Subscription</a></li>
+                        <PiChartBarHorizontalDuotone className='Icon' /> <li><a href="/">Your Subscription</a></li>
                     </div>
                     <div className="blank">
 
@@ -86,15 +86,15 @@ const ToggleMenu = () => {
                     <div className="expl">
                         <h3>Explore</h3>
                         <div className="One">
-                            <PiFireBold className='Icon' /> <li><a href="">Trending</a></li>
+                            <PiFireBold className='Icon' /> <li><a href="/">Trending</a></li>
                         </div><div className="One">
-                            <IoMusicalNoteOutline className='Icon' /> <li><a href="">Music</a></li>
+                            <IoMusicalNoteOutline className='Icon' /> <li><a href="/">Music</a></li>
                         </div><div className="One">
-                            <SiYoutubegaming className='Icon' /> <li><a href="">Gaming</a></li>
+                            <SiYoutubegaming className='Icon' /> <li><a href="/">Gaming</a></li>
                         </div><div className="One">
-                            <ImNewspaper className='Icon' /> <li><a href="">New</a></li>
+                            <ImNewspaper className='Icon' /> <li><a href="/">New</a></li>
                         </div><div className="One">
-                            <CiTrophy className='Icon' /> <li><a href="">Trophy</a></li>
+                            <CiTrophy className='Icon' /> <li><a href="/">Trophy</a></li>
                         </div>
                     </div>
                     <div className="blank">
@@ -104,16 +104,16 @@ const ToggleMenu = () => {
                         <h3>More for youtube</h3>
                         <ul>
                             <div className="One">
-                                <FaYoutube className='Icon' style={{ color: 'red', fontSize: '24px' }} />  <li><a href="">Youtube Premium</a></li>
+                                <FaYoutube className='Icon' style={{ color: 'red', fontSize: '24px' }} />  <li><a href="/">Youtube Premium</a></li>
                             </div>
                             <div className="One">
-                                <SiYoutubestudio className='Icon' style={{ color: 'red', fontSize: '24px' }} />  <li><a href="">Youtube Studio</a></li>
+                                <SiYoutubestudio className='Icon' style={{ color: 'red', fontSize: '24px' }} />  <li><a href="/">Youtube Studio</a></li>
                             </div>
                             <div className="One">
-                                <SiYoutubemusic className='Icon' style={{ color: 'red', fontSize: '24px' }} />  <li><a href="">Youtube Music</a></li>
+                                <SiYoutubemusic className='Icon' style={{ color: 'red', fontSize: '24px' }} />  <li><a href="/">Youtube Music</a></li>
                             </div>
                             <div className="One">
-                                <SiYoutubekids className='Icon' style={{ color: 'red', fontSize: '24px' }} />  <li><a href="">Yotube Kids</a></li>
+                                <SiYoutubekids className='Icon' style={{ color: 'red', fontSize: '24px' }} />  <li><a href="/">Yotube Kids</a></li>
                             </div>
                         </ul>
                     </div>
@@ -123,16 +123,16 @@ const ToggleMenu = () => {
                     <div className="setting">
                         <ul>
                             <div className="One">
-                                <IoSettingsOutline className='Icon' /> <li><a href="">Setting</a></li>
+                                <IoSettingsOutline className='Icon' /> <li><a href="/">Setting</a></li>
                             </div>
                             <div className="One">
-                                <CiFlag1 className='Icon' /> <li><a href="">Report History</a></li>
+                                <CiFlag1 className='Icon' /> <li><a href="/">Report History</a></li>
                             </div>
                             <div className="One">
-                                <IoHelpCircleOutline className='Icon' /> <li><a href="">Help</a></li>
+                                <IoHelpCircleOutline className='Icon' /> <li><a href="/">Help</a></li>
                             </div>
                             <div className="One">
-                                <GoReport className='Icon' /> <li><a href="">Send Feedback</a></li>
+                                <GoReport className='Icon' /> <li><a href="/">Send Feedback</a></li>
                             </div>
                         </ul>
                     </div>
@@ -141,18 +141,18 @@ const ToggleMenu = () => {
                     </div>
                     <div className="last">
                         <div className="One">
-                            <li style={{ position: 'relative', right: '25px' }}><a href="">About Press Copyright <br />Contactus Creator Advertise <br />Developers</a></li>
+                            <li style={{ position: 'relative', right: '25px' }}><a href="/">About Press Copyright <br />Contactus Creator Advertise <br />Developers</a></li>
                         </div>
                     </div>
                     <div className="last">
                         <div className="One">
-                            <li style={{ position: 'relative', right: '25px' }}><a href="">Terms Privacy Policy <br /> & Safety How YouTube <br />worksTest new features</a></li>
+                            <li style={{ position: 'relative', right: '25px' }}><a href="/">Terms Privacy Policy <br /> & Safety How YouTube <br />worksTest new features</a></li>
                         </div>
                     </div>
 
                     <div className="last">
                         <div className="One">
-                            <li style={{ position: 'relative', right: '25px' }}><a href="">© 2024 Google LLC</a></li>
+                            <li style={{ position: 'relative', right: '25px' }}><a href="/">© 2024 Google LLC</a></li>
                         </div>
                     </div>
                 </div>

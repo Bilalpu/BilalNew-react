@@ -22,15 +22,15 @@ const secondToggle = () => {
                 <div className="saree">
                     <div className="explo">
                         <div className="Ones">
-                            <PiFireBold className='Icone' /> <li><a href="">Trending</a></li>
+                            <PiFireBold className='Icone' /> <li><a href="/">Trending</a></li>
                         </div><div className="Ones">
-                            <IoMusicalNoteOutline className='Icone' /> <li><a href="">Music</a></li>
+                            <IoMusicalNoteOutline className='Icone' /> <li><a href="/">Music</a></li>
                         </div><div className="Ones">
-                            <SiYoutubegaming className='Icone' /> <li><a href="">Gaming</a></li>
+                            <SiYoutubegaming className='Icone' /> <li><a href="/">Gaming</a></li>
                         </div><div className="Ones">
-                            <ImNewspaper className='Icone' /> <li><a href="">New</a></li>
+                            <ImNewspaper className='Icone' /> <li><a href="/">New</a></li>
                         </div><div className="Ones">
-                            <CiTrophy className='Icone' /> <li><a href="">Trophy</a></li>
+                            <CiTrophy className='Icone' /> <li><a href="/">Trophy</a></li>
                         </div>
                     </div>
                     <div className="blanks">
@@ -38,13 +38,13 @@ const secondToggle = () => {
                     <div className="mores">
                         <ul>
                             <div className="Ones">
-                                <SiYoutubestudio className='Icone' style={{ color: 'red', fontSize: '24px' }} />  <li><a href="">Youtube Studio</a></li>
+                                <SiYoutubestudio className='Icone' style={{ color: 'red', fontSize: '24px' }} />  <li><a href="/">Youtube Studio</a></li>
                             </div>
                             <div className="Ones">
-                                <SiYoutubemusic className='Icone' style={{ color: 'red', fontSize: '24px' }} />  <li><a href="">Youtube Music</a></li>
+                                <SiYoutubemusic className='Icone' style={{ color: 'red', fontSize: '24px' }} />  <li><a href="/">Youtube Music</a></li>
                             </div>
                             <div className="Ones">
-                                <SiYoutubekids className='Icone' style={{ color: 'red', fontSize: '24px' }} />  <li><a href="">Yotube Kids</a></li>
+                                <SiYoutubekids className='Icone' style={{ color: 'red', fontSize: '24px' }} />  <li><a href="/">Yotube Kids</a></li>
                             </div>
                         </ul>
                     </div>
