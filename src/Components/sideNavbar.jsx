@@ -1,5 +1,4 @@
 import React from 'react'
-// import Link from 'react'
 import { MdHomeFilled } from "react-icons/md";
 import { SiYoutubeshorts } from "react-icons/si";
 import { MdSubscriptions } from "react-icons/md";
@@ -17,8 +16,6 @@ const sideNavbar = () => {
                         <li>Home</li>
                     </div>
                 </Link>
-
-
             </div>
             <Link to="/shorts">
                 <div className="items">

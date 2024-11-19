@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { VscAccount } from "react-icons/vsc";
 import { GrGoogle } from "react-icons/gr";
 import { MdOutlineSwitchAccount } from "react-icons/md";

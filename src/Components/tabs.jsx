@@ -2,21 +2,21 @@ import React, { useRef } from 'react';
 import { MdArrowForwardIos } from "react-icons/md";
 import { IoIosArrowBack } from "react-icons/io";
 import { BiLogoSlack } from 'react-icons/bi';
+import { TbGps } from "react-icons/tb";
 
-const Tabs = ({ setFilter, marginLeft }) => {
-    // Create a ref to access the scrolling container
+const Tabs = ({ setFilter, marginLeft, onTabButtonClick }) => {
     const tabsRef = useRef(null);
 
     const scrollLeft = () => {
         tabsRef.current.scrollBy({
-            left: -150, // Adjust this value based on how much you want to scroll
+            left: -150,
             behavior: 'smooth',
         });
     };
 
     const scrollRight = () => {
         tabsRef.current.scrollBy({
-            left: 150, // Adjust this value based on how much you want to scroll
+            left: 150,
             behavior: 'smooth',
         });
     };
@@ -29,6 +29,7 @@ const Tabs = ({ setFilter, marginLeft }) => {
             </div>
 
             <div className='tabss' ref={tabsRef} >
+                <button className='bik' onClick={onTabButtonClick}  ><TbGps /></button>
                 <button className='jeeta' onClick={() => setFilter('All')} style={{ backgroundColor: 'black', color: 'white' }}>All</button>
                 <button onClick={() => setFilter('Music')}>Music</button>
                 <button onClick={() => setFilter('Playlist')}>Playlist</button>
@@ -46,7 +47,6 @@ const Tabs = ({ setFilter, marginLeft }) => {
                 <button onClick={() => setFilter('Cartoon')}>Cartoon</button>
                 <button onClick={() => setFilter('Mixes')}>Mixes</button>
 
-                {/* Add more buttons as needed */}
             </div>
 
             <div className="arrow" onClick={scrollRight}>

@@ -4,6 +4,7 @@ import Sidebar from '../Components/sideNavbar'
 import ShortSection from '../Components/shortPage'
 import AccountSection from '../Components/AccountSection'
 import ToggleMneu from '../Components/toggleMenu'
+import FooterSection from '../Components/footerSection'
 
 const MainShortPage = () => {
 
@@ -17,12 +18,17 @@ const MainShortPage = () => {
     }
     return (
         <div>
-            <HeaderSection toggleVisibility={toggleVisibility} onAccountClick={onAccountClick} />
+            <div className="container-one">
+                <HeaderSection toggleVisibility={toggleVisibility} onAccountClick={onAccountClick} className="header-section"
+                /></div>
             {!isVisible && < Sidebar style={{ display: 'block' }} />}
             <ShortSection />
 
             {isVisible && <ToggleMneu />}
             {showComponent && <AccountSection />}
+            <div className="Footer-Section">
+                <FooterSection />
+            </div>
         </div>
     )
 }

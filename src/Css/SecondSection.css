@@ -1,0 +1,51 @@
+.Ones {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.mainsar {
+    height: 104vh;
+    position: fixed;
+    top: -1px;
+    z-index: 999;
+
+}
+
+.mores {
+    margin-top: 25px;
+}
+
+.blanks {
+    width: 100%;
+    border: 0.3px solid rgb(144, 144, 144);
+}
+
+.Icone {
+    display: flex;
+    justify-content: space-between;
+    font-size: 25px;
+
+}
+
+.mainsar {
+    width: 70%;
+    background-color: #fff;
+}
+
+.secondf img {
+    width: 130px;
+}
+
+.Ones li {
+    padding-left: 20px;
+}
+
+
+.Ones {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    padding-left: 15px;
+
+}

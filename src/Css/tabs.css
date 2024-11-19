@@ -10,6 +10,11 @@
     /* Hide scrollbar on IE/Edge */
 }
 
+.bik {
+    display: none;
+}
+
+
 .tabss::-webkit-scrollbar {
     display: none;
     /* Hide scrollbar on Chrome/Safari */
@@ -52,6 +57,10 @@ button {
         margin-left: 0% !important;
         padding-bottom: 10px;
 
+    }
+
+    .bik {
+        display: block;
     }
 
     .arrow {

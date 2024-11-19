@@ -23,11 +23,10 @@ import { IoSettingsOutline } from "react-icons/io5";
 import { GoReport } from "react-icons/go";
 import { CiFlag1 } from "react-icons/ci";
 import { IoHelpCircleOutline } from "react-icons/io5";
+
+import { Link } from 'react-router-dom';
 const ToggleMenu = () => {
     const [isVisible, setisVisible] = useState(false);
-
-
-
     const toggleVisibility = () => {
         setisVisible(prevState => !prevState)
     };
@@ -36,12 +35,14 @@ const ToggleMenu = () => {
 
         <div className="toogle11">
             <ul>
-                <div className="One">
-                    <MdHomeFilled className='Icon' />  <li><a href="">Home</a></li>
-                </div>
-                <div className="One">
-                    <SiYoutubeshorts className='Icon' />    <li><a href="">Short </a></li>
-                </div>
+                <Link to="/">
+                    <div className="One">
+                        <MdHomeFilled className='Icon' />  <li><a href="">Home</a></li>
+                    </div></Link>
+                <Link to="/shorts">
+                    <div className="One">
+                        <SiYoutubeshorts className='Icon' />    <li><a href="">Short </a></li>
+                    </div></Link>
                 <div className="One">
                     <MdSubscriptions className='Icon' /> <li><a href="">Subscription</a></li>
                 </div>
@@ -163,3 +164,4 @@ const ToggleMenu = () => {
 }
 
 export default ToggleMenu
+

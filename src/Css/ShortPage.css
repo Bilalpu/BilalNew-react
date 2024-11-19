@@ -1,43 +1,121 @@
 .short {
-    /* position: fixed; */
     display: flex;
-    z-index: -1;
+    z-index: 1;
     flex-direction: column;
-    /* Stack videos vertically */
     align-items: center;
-    /* Center items */
     width: 100%;
     height: 90vh;
-    /* Full viewport height */
+
     overflow-y: auto;
-    /* Enable vertical scrolling */
+
     scroll-snap-type: y mandatory;
-    /* Enable scroll snapping */
+
     scroll-behavior: smooth;
-    gap: 10px;
-    /* Smooth scrolling */
+
+
 }
+
+.back {
+    display: none;
+    z-index: 9999;
+}
+
+.efr {
+    width: 50px;
+    height: 50px;
+    background-color: #f0f0f0;
+    border-radius: 50%;
+}
+
 
 .videoo {
     scroll-snap-align: start;
-    /* Align video to the start when snapping */
     width: 100%;
-    /* Full width for videos */
     height: 100vh;
-    /* Each video takes full viewport height */
     display: flex;
-    /* Use flexbox for content alignment */
     flex-direction: column;
-    /* Stack content vertically */
     align-items: center;
-    /* Center content */
-    /* Center content */
+
+
+
+}
+
+.likes {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    z-index: 9999;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    position: fixed;
+    top: 44%;
+    justify-content: space-evenly;
+
+    height: 43vh;
+    right: 34%;
+    cursor: pointer;
+}
+
+
+
+.likes p {
+    color: red;
+    font-size: 100;
+}
+
+.efr {
+    width: 50px;
+    height: 50px;
+    background-color: #f0f0f0;
+    border-radius: 50%;
+}
+
+
+
+
+
+.inside {
+    width: 50px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: #f0f0f0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media only screen and (max-width:500px) {
+    .container-one {
+        display: none;
+    }
+}
+
+.redf {
+
+    width: 33px;
+    height: 50px;
+    border-radius: 30%;
+    font-size: -1px;
+    line-height: 48px;
+    border-radius: 50px;
+    /* padding-right: 30px; */
+    /* padding: 0px; */
+    color: black;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.redf:hover {
+    color: rgb(37, 166, 221);
+    transition: 0.5s;
 
 }
 
 .short iframe {
-    height: 95%;
-    width: 100%;
+    height: 87%;
+    width: 117%;
 
 }
 
@@ -45,14 +123,16 @@ iframe {
     border-radius: 10px;
 }
 
+
+
 .btnn {
-    font-size: 20px;
+    font-size: 10px;
     display: flex;
     flex-direction: column;
     position: fixed;
     top: 50%;
-    right: 20%;
-    z-index: 1;
+    right: 5%;
+    z-index: 9999;
 }
 
 .sdf,
@@ -60,6 +140,75 @@ iframe {
     border-radius: 50px;
     width: 50px;
     height: 50px;
-    background-color: #f0f0f0;
-    z-index: 1;
+    z-index: -1;
+
+    background: #f0f0f0;
+}
+
+@media only screen and (max-width:500px) {
+    .short iframe {
+        width: 166%;
+        z-index: 1;
+        border-radius: 0%;
+
+    }
+
+    .eeddeedd {
+        width: 100%;
+    }
+
+    .videoo {
+        height: 108vh;
+    }
+
+    .inside {
+        background-color: rgba(0, 0, 0, 0.3);
+        color: white;
+    }
+
+    .btnn {
+        display: none;
+    }
+
+    .short {
+        /* z-index: 1; */
+        height: 100vh;
+    }
+
+    .back {
+        display: block;
+        /* position: fixed; */
+        top: 150px;
+        color: white;
+        background-color: black;
+        left: 18px;
+        font-size: 40px;
+        z-index: 9999 !important;
+    }
+
+
+
+
+
+
+    .likes {
+        top: 481px;
+        cursor: pointer;
+        left: 84%;
+    }
+
+    .redf {
+        color: white;
+    }
+
+    .redf:hover {
+        color: rgb(37, 166, 221);
+        transition: 0.5s;
+    }
+
+    .Footer-Section {
+        display: none;
+    }
+
+
 }

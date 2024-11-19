@@ -22,16 +22,16 @@ footer {
 
 
     footer {
-        display: block;
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
         align-items: center;
-        ,
+        background-color: #fff;
         position: fixed;
         bottom: 1px;
         width: 100%;
         padding-bottom: 5px;
+        z-index: 3;
 
     }
 
@@ -40,6 +40,8 @@ footer {
         align-items: center;
         flex-direction: column;
     }
+
+
 
 
 

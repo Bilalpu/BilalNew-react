@@ -1,5 +1,12 @@
 import React, { useRef, useState } from 'react';
 import { FaArrowUp, FaArrowDown } from "react-icons/fa";
+import { AiFillLike } from "react-icons/ai";
+import { AiFillDislike } from "react-icons/ai";
+import { BiSolidCommentDetail } from "react-icons/bi";
+import { IoMdShareAlt } from "react-icons/io";
+import { BsThreeDotsVertical } from "react-icons/bs";
+import { IoMdArrowBack } from "react-icons/io";
+import { Link } from 'react-router-dom';
 
 const data = [
     {
@@ -22,14 +29,12 @@ const data = [
 ];
 
 const ShortPage = () => {
-    const [currentVideoIndex, setCurrentVideoIndex] = useState(0); // Track the current video
-    const videoRefs = useRef([]); // Create an array to store video references
-
-    // Scroll to a specific video
+    const [currentVideoIndex, setCurrentVideoIndex] = useState(0);
+    const videoRefs = useRef([]);
     const scrollToVideo = (index) => {
         if (videoRefs.current[index]) {
             videoRefs.current[index].scrollIntoView({ behavior: 'smooth' });
-            setCurrentVideoIndex(index); // Update the current video index
+            setCurrentVideoIndex(index);
         }
     };
 
@@ -46,16 +51,35 @@ const ShortPage = () => {
     };
     return (
         <div>
+            <Link to="/">
+                <div className="back">
 
+                    <IoMdArrowBack className='bhjg' />
+
+                </div>
+            </Link>
             <div className="short">
-                {/* Uncomment the arrow buttons if you want to use them */}
                 <div className="btnn">
-                    <FaArrowUp className='sdf' style={{ cursor: 'pointer' }} onClick={handleUpClick} />
-                    <FaArrowDown className='fre' style={{ cursor: 'pointer' }} onClick={handleDownClick} />
+                    <div className="efr">
+                        <FaArrowUp className='sdf' style={{ cursor: 'pointer' }} onClick={handleUpClick} />
+                        <FaArrowDown className='fre' style={{ cursor: 'pointer' }} onClick={handleDownClick} />
+
+                    </div>
+                </div>
+                <div className="likes">
+
+                    <div className="inside">
+                        <AiFillLike className='redf' />   </div>
+                    {/* <p>{count}</p> */}
+                    <div className="inside">  <AiFillDislike className='redf' />  </div>
+                    <div className="inside">    <BiSolidCommentDetail className='redf' />  </div>
+                    <div className="inside"> <IoMdShareAlt className='redf' />   </div>
+                    <div className="inside"> <BsThreeDotsVertical className='redf' />
+                    </div>
                 </div>
 
                 {data.map((video, index) => (
-                    <div key={index}>
+                    <div className='eeddedd' key={index}>
                         <div className="videoo" ref={(el) => (videoRefs.current[index] = el)}>
                             <iframe
                                 width="560"
@@ -67,15 +91,12 @@ const ShortPage = () => {
                             ></iframe>
                         </div>
 
-                        {/* Display video details */}
-                        <h2>{video.name}</h2>
-                        <p>{video.channelName}</p>
-                        <p>{video.views}</p>
+
                     </div>
                 ))}
             </div>
-        </div>
+        </div >
     );
 };
 
-export default ShortPage;
+export default ShortPage

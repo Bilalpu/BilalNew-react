@@ -6,12 +6,12 @@ body {
     /* Ensure scrolling on the entire body */
 }
 
+
 .mainContent {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     cursor: pointer;
-    padding-top: 2%;
     font-family: 'Times New Roman', Times, serif;
     /* padding-left: 10% !important; */
 
@@ -25,6 +25,18 @@ body {
 
 }
 
+.bgh {
+    display: flex;
+    justify-content: space-around;
+}
+
+.bgh img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+    margin-top: 5px;
+}
 
 
 
@@ -45,6 +57,7 @@ body {
     align-items: center;
     padding: 10px;
     height: 300px;
+    margin-bottom: 30px;
 
 
 }
@@ -52,20 +65,23 @@ body {
 .contenrrrr {
     display: flex;
     flex-direction: column;
-    padding-right: 10%;
-
-    gap: 5px;
+    padding-right: 0%;
+    padding-top: 7px;
 
 
 }
 
 .contenrrrr h4 {
-    font-weight: bolder;
     font-family: Arial, Helvetica, sans-serif;
+    color: var(--yt-spec-text-primary);
+    font-family: "Roboto", "Arial", sans-serif;
+
+    font-weight: 600;
+    overflow: hidden;
 }
 
 .contenrrrr h5 {
-    width: 60%;
+    width: 80%;
     color: #606060;
     font-family: "Roboto", "Arial", sans-serif;
     font-weight: 100;
@@ -87,7 +103,37 @@ body {
     }
 
     .content {
-        width: 28% !important;
+        width: 47% !important;
+        margin-bottom: 10%;
+    }
+}
+
+
+@media only screen and (max-width:1300px) {
+
+
+    .content {
+        width: 32% !important;
+    }
+}
+
+@media only screen and (max-width:1050px) {
+
+
+    .content {
+        width: 47% !important;
+        margin-bottom: 10%;
+    }
+
+    .video iframe {
+        height: 281px;
+    }
+}
+
+@media only screen and (max-width:700px) {
+    .content {
+        width: 90% !important;
+        /* padding-left: 8%; */
     }
 }
 
@@ -130,6 +176,7 @@ body {
 @media only screen and (max-width: 400px) {
     .maoooo {
         flex-direction: column;
+        height: 100vh;
     }
 
     .mainContent {
@@ -149,7 +196,49 @@ body {
     .content {
         width: 100% !important;
         display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        /* Ensure content takes full width */
+
+        /* Add spacing between content items */
+    }
+
+    .contenrrrr {
+        padding-right: 0;
+        width: 100%;
+        /* Adjust content to full width */
+    }
+
+    .contenrrrr h5,
+    .contenrrrr p {
+        width: 100%;
+        /* Make text full width */
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    .maoooo {
         flex-direction: column;
+    }
+
+    .mainContent {
+        flex-direction: column;
+
+    }
+
+    /* Video takes full screen */
+    .video iframe {
+        width: 100%;
+        /* Video takes full width */
+        height: 300px;
+        /* Adjust the height to match aspect ratio */
+    }
+
+    /* Stack content in a column layout */
+    .content {
+        width: 100% !important;
+        display: flex;
+        flex-direction: row;
         flex-wrap: wrap;
         /* Ensure content takes full width */
 

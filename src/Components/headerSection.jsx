@@ -6,17 +6,19 @@ import { FaMicrophone } from "react-icons/fa";
 import { BiVideoPlus } from "react-icons/bi";
 import { IoIosNotificationsOutline } from "react-icons/io";
 import { VscAccount } from "react-icons/vsc";
+import { Link } from 'react-router-dom';
 
 const headerSection = ({ toggleVisibility, onAccountClick }) => {
     return (
         <nav>
-            <div className="main">
+            <div className="main" >
                 <div className="teo">
                     <div className="bar">
                         <div className="twot">
-                            <FaBars className='bar' onClick={toggleVisibility} />
-
-                            <img src={Logo} alt="" />
+                            <FaBars className='bars' onClick={toggleVisibility} />
+                            <Link to="/">
+                                <img src={Logo} alt="" />
+                            </Link>
                         </div>
                     </div>
 
@@ -25,25 +27,23 @@ const headerSection = ({ toggleVisibility, onAccountClick }) => {
                     <div className="maininput">
                         <div className="searchBar">
 
-                            <input type="text" placeholder='Search' className='inputfield
-                ' />
+                            <input type="text" placeholder='Search' className='inputfield' />
                             <tooltip title="Search">
                                 <div className="se">
                                     <button>  <CiSearch className='srsr' /></button>
-
-
                                 </div>
                             </tooltip>
-
                         </div>
                     </div>
                 </div>
             </div>
             <tooltip title="Search with your Voice">
+
                 <div className="mic">
                     <button className='btn'
                     ><FaMicrophone className='sdsdsd' /></button>
                 </div>
+
             </tooltip>
             <div className="lastSection">
 
@@ -53,26 +53,22 @@ const headerSection = ({ toggleVisibility, onAccountClick }) => {
                     </tooltip>
                 </div>
                 <div className="noti">
-                    <tooltip title="Notification">
+
+                    <tooltip title="Notification" >
                         <IoIosNotificationsOutline className='both' />
                     </tooltip>
+
                     <div className="mainline">
                         <div className="line">
                             Notification
                         </div>
-
-
-
                     </div>
                 </div>
                 <div className="account">
-
-
                     <VscAccount className='both' onClick={onAccountClick} />
-
                 </div>
             </div>
-        </nav>
+        </nav >
     )
 }
 

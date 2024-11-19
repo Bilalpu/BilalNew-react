@@ -4,6 +4,7 @@ import { SiYoutubeshorts } from "react-icons/si";
 import { MdSubscriptions } from "react-icons/md";
 import { MdSmartDisplay } from "react-icons/md";
 import { Link } from 'react-router-dom';
+
 const footerSection = () => {
     return (
         <div>

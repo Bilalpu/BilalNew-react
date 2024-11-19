@@ -11,12 +11,18 @@
 
 }
 
+
+
 .line {
     display: none;
 }
 
 .mainline {
     display: block;
+    color: red;
+}
+
+.noti title {
     color: red;
 }
 
@@ -93,7 +99,6 @@ nav {
     border: 1px solid rgb(213, 213, 213);
     box-shadow: inset 0 1px 2px rgb(227, 225, 225);
     width: 100%;
-
 }
 
 .se {
@@ -126,16 +131,21 @@ nav {
     box-shadow: inset 0 1px 4px rgb(212, 211, 211);
 }
 
+
+
 .mic {
     padding-right: 12%;
     padding-top: 15px;
+    position: relative;
+    right: 69px;
+
 
 
 }
 
 .mic :hover {
-    background: #b4b3b3;
-    transition: 0.5s;
+    background: #c7c7c7;
+
 }
 
 
@@ -255,7 +265,7 @@ nav {
     }
 
     nav {
-        height: 5vh;
+        height: 8vh;
     }
 
     .se button {
@@ -285,6 +295,19 @@ nav {
         padding-left: 0%;
         display: none;
     }
+
+    .bars {
+        display: none;
+    }
+
+    .teo {
+        left: -4px;
+    }
+
+    .twot img {
+        width: 49%;
+        padding-left: 0% !important;
+    }
 }
 
 @media only screen and (max-width:565px) {
@@ -292,16 +315,18 @@ nav {
 
     .se button {
         position: relative;
-        top: 26px;
+        top: 32px;
         right: 20px;
     }
+
+
 
 }
 
 @media only screen and (max-width:490px) {
     .se button {
         position: relative;
-        top: 23px;
+        top: 38px;
     }
 
     .lastSection {
@@ -316,7 +341,7 @@ nav {
 
     .se button {
         position: relative;
-        top: 23px;
+        top: 32px;
         right: 69px;
     }
 
