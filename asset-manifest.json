@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/BilalNew-react/static/css/main.3f21c8ce.css",
+    "main.js": "/BilalNew-react/static/js/main.f21b81ec.js",
+    "static/js/453.ed3810f9.chunk.js": "/BilalNew-react/static/js/453.ed3810f9.chunk.js",
+    "static/media/home.jpg": "/BilalNew-react/static/media/home.3e6dd34b6a357ca90b0d.jpg",
+    "static/media/miror.jpg": "/BilalNew-react/static/media/miror.878f786895cca2c4bd5f.jpg",
+    "static/media/car.jpg": "/BilalNew-react/static/media/car.3cd8e73b16d65a4e644e.jpg",
+    "static/media/house.jpg": "/BilalNew-react/static/media/house.40058a64a1fd56c6c093.jpg",
+    "static/media/river.jpg": "/BilalNew-react/static/media/river.384bee6574643d6034a5.jpg",
+    "index.html": "/BilalNew-react/index.html",
+    "main.3f21c8ce.css.map": "/BilalNew-react/static/css/main.3f21c8ce.css.map",
+    "main.f21b81ec.js.map": "/BilalNew-react/static/js/main.f21b81ec.js.map",
+    "453.ed3810f9.chunk.js.map": "/BilalNew-react/static/js/453.ed3810f9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3f21c8ce.css",
+    "static/js/main.f21b81ec.js"
+  ]
+}
